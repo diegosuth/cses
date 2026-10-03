@@ -1,0 +1,10 @@
+#Ignore everything
+*
+#except the folders
+!*/
+#and any file with an extension
+!*.*
+.DS_Store
+#these ones I dont want to ignore
+!Makefile
+!.gitignore
