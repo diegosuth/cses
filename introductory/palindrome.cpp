@@ -31,7 +31,6 @@ int main() {
         cout << "NO SOLUTION" << endl;
         return 0;
     }
-    sort(letterpriority.begin(),letterpriority.end());
     vector<char> solution(oriword.length());
     int i = 0;
     int j = oriword.length()-1;
@@ -50,11 +49,11 @@ int main() {
                     i++;
                     j--;
                 }
-                solution[(oriword.length()/2) + 1] = letterpriority.back().second;
+                solution[(oriword.length()/2)] = letterpriority.back().second;
                 letterpriority.pop_back();
             }
             else{
-                solution[(oriword.length()/2) + 1] = letterpriority.back().second;
+                solution[(oriword.length()/2)] = letterpriority.back().second;
                 letterpriority.pop_back();
             }
         }
