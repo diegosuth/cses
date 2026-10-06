@@ -9,7 +9,7 @@ int main() {
     long long start = 1;
     long long mod = 1000000007LL;
     for(int i = 0; i < n; i++){
-        start = (start % mod) * (2);
+        start = ((start % mod) * 2) % mod;
     }
     cout << start << endl;
     return 0;    
