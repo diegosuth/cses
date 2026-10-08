@@ -4,7 +4,7 @@
 !*/
 #and any file with an extension
 !*.*
-*.DS_Store
+.DS_Store
 *.out
 *.txt
 #these ones I dont want to ignore
